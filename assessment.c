@@ -19,7 +19,8 @@ int main ()
     FILE *file;
     int dataInsert;
     int userInput;
-    printf("Press 1 to insert data \n Press 2 to find data \n");
+    printf("Press 1 to insert data \nPress 2 to find data \n");
+    printf("Your input : ");
     scanf("%d",&userInput);
 
     struct user u[30];
