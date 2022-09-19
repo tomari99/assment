@@ -37,7 +37,7 @@ int main ()
             }
         }
     else if(userInput == 1){
-    printf("How Many User Data You want to insert : ");
+    printf("How Many User You want to insert : ");
     scanf("%d",&dataInsert);
 
     file = fopen("user.txt","a+");
@@ -56,6 +56,7 @@ int main ()
         scanf("%s",&u[i].password);
 
         fwrite(&u[i],sizeof(struct user),1,file);
+        printf("Data Inserted Successfully");
     }
     }
 
