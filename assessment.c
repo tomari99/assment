@@ -56,7 +56,7 @@ int main ()
         scanf("%s",&u[i].password);
 
         fwrite(&u[i],sizeof(struct user),1,file);
-        printf("Data Inserted Successfully \n");
+        printf("Data Inserted Successfully \n \n");
     }
     }
 
