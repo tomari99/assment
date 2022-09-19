@@ -28,6 +28,7 @@ int main ()
         file = fopen("user.txt","r");
         if(file == NULL){
             printf("There is no data in file");
+            return;
 
         }
         else{
@@ -40,7 +41,7 @@ int main ()
     printf("How Many User You want to insert : ");
     scanf("%d",&dataInsert);
 
-    file = fopen("user.txt","a+");
+    file = fopen("user.txt","r+");
     for(int i = 0;i<dataInsert;i++){
         printf("Enter User ID : ");
         scanf("%d",&u[i].id);
